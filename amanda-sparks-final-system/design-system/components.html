@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Components</title>
+	<link rel="stylesheet" href="gizmo.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+
+		<a href="index.html" class="site-logo">Gizmo Design System</a>
+
+		<nav class="nav-primary">
+			<ul class="header-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="style.html">Style</a></li>
+				<li><a href="components.html">Components</a></li>
+				<li><a href="layout.html">Layout</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+		<h1>Components</h1>
+		<h2>Link Buttons</h2>
+
+		<figure>
+			<h3>Link Button</h3>
+			<a href="" class="link-button">Link Button</a>
+			<h3>Hero Button</h3>
+	    	<a href="" class="link-button-hero">Hero Button</a>
+	    	<h3>Tertiary Button</h3>
+			<a href="" class="link-button-tertiary">Tertiary Button</a>
+
+		</figure>
+
+		<h2>Accordians</h2>
+
+		<figure>
+
+			<details>
+    			<summary>How do I choose the right tool for my project?</summary>
+    
+    			<div>
+
+        			<p>Choosing a tool has never been easier with our Tool Selector. You can sort through available tools or we can walk you through the selection. We are also always available by phone or email.</p>
+
+    			</div>
+    
+			</details>
+
+			<details>
+    
+    			<summary><span>How do I earn rewards?</span></summary>
+    
+    		<div>
+        		
+    			<p>Each time you use Toolshed you earn Gizmo Rewards. </p>
+
+    		</div>
+    
+			</details>
+
+			<details>
+    			
+    			<summary><span>How can I contact Toolshed?</span></summary>
+    
+    				<div>
+    					<ul>
+            				<li>chat</li>
+            				<li>email</li>
+            				<li>phone</li>
+        				</ul>
+
+    				</div>
+    
+			</details>
+
+		</figure>
+
+		<h2>Modal Dialog</h2>
+
+		<figure>
+			
+			<button id="open-modal" type="button">Open Modal</button>
+
+			<dialog id="modal-demo">
+
+				<h2>Tool Selector</h2>
+
+				<p>The best tool for you're job is a: Circular Saw!</p>
+
+			</dialog>
+
+		</figure>
+
+		<h2>Form Inputs</h2>
+
+		<figure>
+			<h3>Text Pop-Up</h3>
+			
+			<form action="subfolder/file.js">
+				<h2>Contact Us</h2>
+					<div>
+
+       					<label for="user-name">Hello, my name is...</label>
+      					<input type="text" id="user-name" name="name" placeholder="First/Last" class="contact">
+
+   					</div>
+   			</form>
+
+   			<form>
+				<h2>Error!</h2>
+   					<div>
+
+       					<label for="user-name">Hello, my name is...</label>
+      					<input type="text" id="user-name" name="name" placeholder="First/Last" class="error">
+
+   					</div>
+   			</form>
+
+   			<form>
+				<h2>Disabled!</h2>
+   					<div>
+
+       					<label for="user-name">Hello, my name is...</label>
+      					<input type="text" id="user-name" name="name" placeholder="First/Last" class="disabled">
+
+   					</div>
+			</form>
+   		</figure>
+
+   		<figure>
+   			<h3>Text Area</h3>
+   				<div>
+					<label for="user-message">Your Message</label>
+					<textarea id="user-message" name="message" placeholder="Enter your message here please. thank you." class="standard"></textarea>
+				</div>
+
+				<div>
+					<label for="user-message">Error!</label>
+					<textarea id="user-message" name="message" placeholder="Enter your message here please. thank you." class="error"></textarea>
+				</div>
+
+				<div>
+					<label for="user-message">Disabled!</label>
+					<textarea id="user-message" name="message" placeholder="Enter your message here please. thank you." class="disabled"></textarea>
+				</div>
+		</figure>
+
+
+		<figure>
+		<h3>Select</h3>
+
+			<div>
+				<label for="saw-select">Saw Selection</label>
+					<select id="saw-select" name="saw-select" class=select>
+						<option disabled selected hidden>Choose</option>
+						<option>Bow Saw</option>
+						<option>Electric Circular</option>
+						<option>Jigsaw</option>
+					</select>
+			</div>
+
+				<div>
+				<label for="saw-select">Error!</label>
+					<select id="saw-select" name="saw-select" class=error>
+						<option disabled selected hidden>Choose</option>
+						<option>Bow Saw</option>
+						<option>Electric Circular</option>
+						<option>Jigsaw</option>
+					</select>
+			</div>
+
+				<div>
+				<label for="saw-select">Disabled!</label>
+					<select id="saw-select" name="saw-select" class=disabled>
+						<option disabled selected hidden>Choose</option>
+						<option>Bow Saw</option>
+						<option>Electric Circular</option>
+						<option>Jigsaw</option>
+					</select>
+			</div>
+
+
+		</figure>
+
+		<figure>
+
+			<h3>Submit Button</h3>
+
+				<input type="submit" value="Submit!">
+			
+		</figure>
+
+		<h2>Navigation</h2>
+
+		<figure>
+
+			<h3>Primary Navigation</h3>
+
+			<nav class="nav-primary">
+				<ul>
+					<li><a href="index.html" class="current-page">Home</a></li>
+					<li><a href="style.html" class="current-page">Style</a></li>
+					<li><a href="components.html" class="current-page">Components</a></li>
+					<li><a href="layout.html" class="current-page">Layout</a></li>
+				</ul>
+			</nav>
+
+			<h3>Secondary Navigation</h3>
+
+			<nav class="nav-secondary">
+				<ul>
+					<li><a href="index.html" class="current-page">Home</a></li>
+					<li class="sub-menu-parent" tab-index="0">
+						<a href="style.html" class="current-page">Style</a>
+						<ul class="sub-menu" class="current-page">
+							<li><a href="#">Style I</a></li>
+							<li><a href="#">Style II</a></li>
+							<li><a href="#">Style III</a></li>
+						</ul>
+					</li>
+
+					<li><a href="components.html" class="current-page">Components</a></li>
+					<li><a href="layout.html" class="current-page">Layout</a></li>
+				</ul>
+			</nav>
+		</figure>
+
+		<h2>Notifications</h2>
+		<figure>
+			<section class="message-card">
+				
+				<img src="img/ToolshedError.png" alt="error">
+				
+				<p>This tool is currently unavailable.</p>
+			</section>
+
+			<section class="message-card">
+				
+				<img src="img/ToolshedWarning.png" alt="warning">
+				
+				<p>Sharp Tool! Please be cautious!</p>
+			</section>
+
+			<section class="message-card">
+				
+				<img src="img/ToolshedInfo.png" alt="info">
+				
+				<p>Please read requirements.</p>
+			</section>
+
+			<section class="message-card">
+				
+				<img src="img/ToolshedSuccess.png" alt="success">
+				
+				<p>Yes! Order successful!</p>
+			</section>
+
+		</figure>
+
+		<h2>Hero Component</h2>
+		<figure>
+			<a href="hero-block.html">
+				<img src="img/ScreenShot.png" alt="hero">
+			</a>
+		</figure>
+
+		<h2>Information Cards</h2>
+
+		<figure>
+			<h3>Article / Post</h3>
+
+			<a href="http://google.com">
+			<section class="card-post">
+				<img src="img/Saw.png" alt="saw">
+	
+				<div>
+	
+					<h4>Rotary Saw Class</h4>
+					<p>Take our introductory course on how to use a Rotary Saw.</p>
+
+					<p>03.17.2020</p>
+		
+				</div>
+				
+			</section>
+			</a>
+		</figure>
+		
+
+		<figure>
+			<h3>Personal / Profile</h3>
+			
+			<section class="card-profile">
+				
+				<img src="img/sid.png" alt="doggo">
+	
+				<div>
+				<a href="https://en.wikipedia.org/wiki/Dog">
+				<h3>Sydney</h3>
+				<p>Department Head of Treats</p>
+				
+				<p>Sydney@toolshed.com</p>
+				<p>512-555-555</p>
+				</a>
+		
+				</div>
+			</section>
+		</figure>	
+
+
+		
+		<figure>
+			<h3>Call to Action</h3>
+
+			<section class="card-call">
+				<img src="img/toolsout.jpg"  alt="tools">
+	
+				<div>
+	
+				<h3>Sign Up Here</h3>
+
+				<p>Start Making Now!</p>
+
+				<a href="https://google.com" class="link-button-hero">Let's Build!</a>
+
+		
+				</div>
+			</section>
+		</figure>
+
+
+
+	</main>
+
+	<footer>
+		<p class="footer-info">Gizmo Design System</p>
+		<p class="footer-info">Amanda Sparks - Copyright 2020</p>
+	
+		<nav class="nav-secondary"> 
+			<ul>
+				<li><a href="http://linkedin.com">LinkedIn</a></li>
+				<li><a href="http://google.com">Google</a></li>
+				<li><a href="http://behance.com">Behance</a></li>
+			</ul>
+		</nav>
+
+	</footer>
+
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function(){
+
+				const modal = document.querySelector('dialog');
+				const open = document.getElementById('open-modal');
+
+				open.addEventListener('click', () => {
+					modal.showModal();
+				});
+
+				modal.addEventListener('click', event => {
+					if (event.target === modal) {
+							modal.close('cancelled');
+					}
+				});
+
+				});
+		</script>
+
+
+
+
+</body>
+</html>
+
